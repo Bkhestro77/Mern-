@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* body {
+        margin-left: 20px;
+    } */
+
+    .container {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        /* flex-direction:column; */
+        /* flex-direction:row-reverse; */
+        /* flex-direction:column-reverse; */
+        /* justify-content: space-evenly; */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        gap: 20px;
+        height: 400px;
+        border: 2px solid red;
+        flex-wrap: wrap;
+        /* flex:wrap-reverse; */
+        /* flex-wrap:nowrap; */
+        /* align-items: center;  */
+        /* align-items: flex-start; */
+        /* flex-direction: row;
+        flex-flow: row wrap-reverse; */
+    }
+
+    .box {
+        border: 2px solid green;
+        /* margin:10px 0px; */
+        width: 100px;
+    }
+
+    #box1 {
+        order: 1;
+        flex-grow: 1;
+        flex-shrink: 2;
+    }
+
+    #box3 {
+        order: 5;
+        /* flex-grow:1; */
+    }
+
+    #box7 {
+        flex-shrink: 4;
+    }
+
+    #box5 {
+        flex-basis: 200px;
+    }
+
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: red;
+        background-color: rgb(185, 185, 227);
+        padding: 10px 32px;
+    }
+
+    .nav-items {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        gap: 60px;
+    }
+
+    button {
+        background-color: coral;
+        color: aliceblue;
+        padding: 6px 12px;
+        border-radius: 8px;
+        /* height:30px; */
+
+    }
+</style>
+
+<body>
+
+    <nav class="navbar">
+        <h1>Logo</h1>
+
+        <div class="nav-items">
+            <div> Home</div>
+            <div> About</div>
+            <div>Contact</div>
+        </div>
+        <div>
+            <button>Login</button>
+            <button>Signup</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div> -->
+
+        <div class="box" id="box">box1</div>
+        <div class="box" id="box">box2</div>
+        <div class="box" id="box">box3</div>
+        <div class="box" id="box">box4</div>
+        <div class="box" id="box">box5</div>
+        <div class="box" id="box">box6</div>
+        <div class="box" id="box">box7</div>
+        <div class="box" id="box">box8</div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- .box{$box}*6 -->
+<!-- align-items: center;   (y-axis) -->
+<!-- .box#box${box$}*8 -->

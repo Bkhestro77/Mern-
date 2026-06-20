@@ -1,0 +1,62 @@
+/* external css */
+body{
+    background-color: burlywood;
+    color:black;
+}
+
+/* Selector Types
+Id selector
+Class selector
+Element selector
+ */
+
+
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* h1{
+    margin: 50px;
+} */
+
+body{
+    background-color: rgb(108, 83, 83);
+    color:white;
+    margin-left: 200px;
+}
+
+div {
+    background-color: rgb(205,151,85);
+}
+
+/* .classred{
+    color:red;
+    font-size: 24px;
+} */
+
+/* #footer{
+font-size: 20px;
+font-weight: 700;
+background-color:brown;
+color:aqua;
+} */
+/* 
+blue {
+    color:green;
+}
+
+p {
+color:black;
+} */
+
+/* Grouping selector */
+/* h1,h2,p { 
+    color:blue;
+} */
+
+div h1 {  
+    color:blue;
+}

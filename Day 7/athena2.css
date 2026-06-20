@@ -20,11 +20,8 @@
     gap: 48px;
     justify-content: center;
     align-items: space-between;
-
-
-    
-
 }
+
 
 .logo{
     color:coral;
@@ -50,7 +47,14 @@
 .textarea{
     width:50%; 
 }
+    .nav-items h4:hover{
+        transform: scale(1.1);
+        background-color: black;
+        color: white;
+        cursor:pointer;
+    }
 
+    }
 
 .textarea h2{
     font-size:50px;

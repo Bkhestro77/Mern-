@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins',"sans-serif";
+}
+
+.container{
+    height:400px;
+    width:400px;
+    /* background-color: beige; */
+    margin:10px auto;
+}
+.box{
+    height:200px;
+    width:200px;
+    background-color: white;
+    /* transition-delay: 1sec; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function:ease-in; */
+    /* transition-timing-function:ease-in-out */
+    transition-timing-function:ease-out;
+     /* transition-property:background-color transform; */
+        transition-property:all;
+    transform: translate(50%,50%);
+    background-color: brown;
+    /* transform: translateZ(40px,50px); */
+    /* transform: scaleY(1.5); */
+    /* transform: rotate(45deg); */
+    /* transform:skew(40deg); */
+        transition-duration: 2sec;
+        transition-timing-function:cubic-bezier()
+}
+
+.box:hover{
+    background-color: purple;
+    /* transform:rotate(180deg); */
+    border-radius:50%
+
+}
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="box">
+        box
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

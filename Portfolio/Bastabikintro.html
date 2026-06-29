@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar-container">
+    <div class="floating-navbar">
+        <!-- Logo Branding -->
+        <div class="nav-logo">
+            <span class="gradient-dot"></span>
+            Online
+        </div>
+        
+
+
+        <ul class="nav-tabs">
+            <li class="tab-item active"><a href="#"><i class="fas fa-home"></i> <span>Home</span></a></li>
+            <li class="tab-item"><a href="#"><i class="fas fa-compass"></i> <span>Explore</span></a></li>
+            <li class="tab-item"><a href="#"><i class="fas fa-comment-alt"></i> <span>Messages</span></a></li>
+            <li class="tab-item"><a href="#"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
+        </ul>
+        
+
+            <div class="nav-profile-wrapper" title="Change Status">
+                <img src="./profile.jpeg" alt="User Profile" class="nav-avatar-mini">
+                <span id="statusIndicator" class="online-status" data-status="online"></span>
+                
+                <select id="statusPicker" class="status-selector">
+                    <option value="online">🟢 Online</option>
+                    <option value="busy">🔴 Busy / DND</option>
+                    <option value="offline">⚫ Offline</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+        </div>
+    </div>
+</nav>
+
+    <div class="card">
+        <div class="card-header"></div>
+        <div class="avatar-container">
+            <img src="./profile.jpeg" alt="Bastabik Bhandari" class="avatar">
+        </div>
+
+        <div class="card-body">
+            <h2 class="name">Bastabik Bhandari <i class="fas fa-check-circle verified-icon"></i></h2>
+            <p class="title">Full-stack Developer</p>
+            <p class="bio">
+            <b>Breaking The Rules and CODES to Bring The Revolution.</b></p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <span class="stat-number">0</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">2.4K</span>
+                <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">0</span>
+                <span class="stat-label">Following</span>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="btn-profile">View Profile <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+</body>
+</html>

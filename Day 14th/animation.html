@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            border: 1px solid white;
+            height: 300px;
+            width: 300px;
+            margin: 80px auto;
+            animation-name: loading;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            border-radius: 50%;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: wheat;
+            border-radius: 50%;
+        }
+
+        /* @keyframes mern {
+            0%,100% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(200px, 0);
+                background-color: blue;
+            }
+
+
+            50% {
+                transform: translate(200px, 200px);
+            }
+
+            75% {
+                transform: translate(0, 200px);
+            }
+            100%{
+                transform:translate(0,0);
+            } */
+
+
+        @keyframes loading {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* .dots {
+            display: flex;
+            color: white;
+            font-size: 48px;
+            gap: 8px;
+            font-weight: 800;
+            justify-content: center;
+            animation-name: typing;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        } */
+
+        a {
+            animation: a 2s linear 2s infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes a {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);/
+            }
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0px);
+                opacity: 0.3;
+            }
+
+            to {
+                transform: translateY(-15px);
+                opacity: 1;
+            }
+        }
+/* 
+        @keyframes typing {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);/
+            }
+        } */
+
+        .dots span{
+            color:white;
+            font-size: 48px;
+            font-weight: bold;  
+            animation : bounce 0.7s infinite alternate;
+        } 
+
+        .dots span:nth-child(2){
+            animation-delay: 0.2s;
+        }
+
+        .dots span:nth-child(3){
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <!-- <div class="dots">
+        <div>.</div>
+        <div class="a">.</div>
+        <div>.</div>
+    </div> -->
+<div class="dots">
+    <span>.</span>
+     <span>.</span>
+      <span>.</span>
+</div>
+</body>
+
+</html>
